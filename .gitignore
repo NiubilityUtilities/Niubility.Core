@@ -87,7 +87,6 @@ StyleCopReport.xml
 *.ilk
 *.meta
 *.obj
-*.idb
 *.iobj
 *.pch
 *.pdb
@@ -95,8 +94,6 @@ StyleCopReport.xml
 *.pgc
 *.pgd
 *.rsp
-# but not Directory.Build.rsp, as it configures directory-level build defaults
-!Directory.Build.rsp
 *.sbr
 *.tlb
 *.tli
@@ -105,7 +102,6 @@ StyleCopReport.xml
 *.tmp_proj
 *_wpftmp.csproj
 *.log
-*.tlog
 *.vspscc
 *.vssscc
 .builds
@@ -168,7 +164,6 @@ coverage*.info
 
 # NCrunch
 _NCrunch_*
-.NCrunch_*
 .*crunch*.local.xml
 nCrunchTemp_*
 
@@ -200,7 +195,7 @@ publish/
 *.azurePubxml
 # Note: Comment the next line if you want to checkin your web deploy settings,
 # but database connection strings (with potential passwords) will be unencrypted
-*.pubxml
+#*.pubxml
 *.publishproj
 
 # Microsoft Azure Web App publish settings. Comment the next line if you want to
@@ -309,17 +304,6 @@ node_modules/
 
 # Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
 *.vbw
-
-# Visual Studio 6 auto-generated project file (contains which files were open etc.)
-*.vbp
-
-# Visual Studio 6 workspace and project file (working project files containing files to include in project)
-*.dsw
-*.dsp
-
-# Visual Studio 6 technical files
-*.ncb
-*.aps
 
 # Visual Studio LightSwitch build output
 **/*.HTMLClient/GeneratedArtifacts

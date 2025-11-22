@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Niubility.Core</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Niubility.Abstractions</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Wheeler Xie &lt;darkwanderer.1985@gmail.com&gt;</Authors>
+    <Product>Niubility.Abstractions</Product>
+    <Description></Description>
+    <PackageProjectUrl>https://gitee.com/niubility10086/core</PackageProjectUrl>
+    <RepositoryUrl>https://gitee.com/niubility10086/core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageTags>niubility,abstractions</PackageTags>
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

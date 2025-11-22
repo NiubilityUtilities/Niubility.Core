@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Niubility.Common.Web</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Wheeler Xie &lt;darkwanderer.1985@gmail.com&gt;</Authors>
+    <Product>Niubility.Common.Web</Product>
+    <Description></Description>
+    <PackageProjectUrl>https://gitee.com/niubility10086/core</PackageProjectUrl>
+    <RepositoryUrl>https://gitee.com/niubility10086/core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageTags>niubility,utility,web</PackageTags>
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.5" />
+    <PackageReference Include="Niubility.Common" Version="1.0.0" />
+  </ItemGroup>
+
+  <Choose>
+    <When Condition="$(Configuration)=='Debug'">
+      <ItemGroup>
+        <ProjectReference Include="..\Niubility.Abstractions\Niubility.Abstractions.csproj" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <PackageReference Include="Niubility.Abstractions" Version="1.0.0" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

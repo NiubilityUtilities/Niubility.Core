@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyName>Niubility.Injection</AssemblyName>
+    <RootNamespace>Niubility.Injection</RootNamespace>
+    <PackageId>Niubility.Injection</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Wheeler Xie &lt;darkwanderer.1985@gmail.com&gt;</Authors>
+    <Product>Niubility.Injection</Product>
+    <Description>Dependency Injection</Description>
+    <PackageProjectUrl>https://gitee.com/niubility10086/core</PackageProjectUrl>
+    <RepositoryUrl>https://gitee.com/niubility10086/core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageTags>niubility,injection</PackageTags>
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.32" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+</Project>
